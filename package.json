@@ -1,0 +1,15 @@
+{
+  "name": "server-scaffold",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.5.1",
+    "koa-static": "^4.0.2"
+  }
+}
