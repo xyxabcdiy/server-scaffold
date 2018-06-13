@@ -11,23 +11,9 @@ module.exports = {
         browser: true
     },
     extends: [
-        'standard', // 启用推荐的规则
-        'plugin:react/recommended'
+        'standard' // 启用推荐的规则
     ],
-    plugins: [    // 插件的配置
-        'html',   // eslint-plugin-html
-        'react'
-    ],
-    settings: {
-        'html/html-extensions': ['.html', '.wpy'],
-        'react': {
-            'createClass': 'createReactClass',
-            'pragma': 'React',
-            'version': '15.0'
-        }
-    },
     'globals': {  // 脚本在执行期间访问的额外的全局变量
-        'wx': true,
         '__DEV__': true
     },
     'rules': {
@@ -48,12 +34,6 @@ module.exports = {
         'space-infix-ops': ['error', {'int32Hint': false}],  // 要求操作符周围有空格,设置 int32Hint 选项为 true (默认 false) 允许 a|0 不带空格.
         'quotes': ['error', 'single', {'allowTemplateLiterals': true}],  //强制使用单引号，允许字符串使用反勾号
         'eqeqeq': ['error', 'always'],   // 使用类型安全的 === 和 !== 操作符代替 == 和 != 操作符
-        'import/no-webpack-loader-syntax': 'warn',
-        'react/jsx-uses-react': 'error',
-        'react/jsx-uses-vars': 'error',
-        'react/no-string-refs': 'warn',
-        'react/prop-types': 'off',
-        'react/display-name': 'warn',
-        'react/no-unescaped-entities': 'off'
+        'import/no-webpack-loader-syntax': 'warn'
     }
 };
